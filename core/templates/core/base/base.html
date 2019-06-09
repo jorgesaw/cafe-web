@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %} {% endblock %} | La Caffettiera</title>
+
+    {% include 'core/base/css.html' %} 
+    {% include 'core/base/fonts.html' %} 
+    {% include 'core/base/css_style.html' %} 
+    
+</head>
+<body>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">L'autentico caffè d'italia</span>
+        <span class="site-heading-lower">La Caffettiera</span>
+    </h1>
+    {% include 'core/base/nav.html' %} 
+
+    {% block content %} {% endblock %}
+   
+    {% include 'core/base/footer.html' %} 
+    {% include 'core/base/js.html' %}
+    {% include 'core/base/js_my.html' %} 
+</body>
+</html>
